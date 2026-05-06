@@ -17,25 +17,19 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Tailwind CSS
 
-To add Tailwind CSS to this Vite + React project, install the dev dependencies and then start the dev server.
+This project uses **Tailwind CSS v4** with Vite and React.
 
 - Install (npm):
 
 ```bash
-npm install -D tailwindcss postcss autoprefixer
-```
-
-- Generate configs (optional, already included here):
-
-```bash
-npx tailwindcss init -p
+npm install -D tailwindcss postcss @tailwindcss/postcss
 ```
 
 - Files added/updated:
 
-- `tailwind.config.cjs`: Tailwind content paths and basic config.
-- `postcss.config.cjs`: Loads `tailwindcss` and `autoprefixer`.
-- `src/index.css`: Tailwind directives `@tailwind base;`, `@tailwind components;`, `@tailwind utilities;` were added.
+- `tailwind.config.cjs`: Tailwind content paths and configuration.
+- `postcss.config.cjs`: Uses `@tailwindcss/postcss` plugin (v4).
+- `src/index.css`: Imports Tailwind v4 using `@import "tailwindcss";`
 
 - Run dev server:
 
@@ -43,7 +37,7 @@ npx tailwindcss init -p
 npm run dev
 ```
 
-After installing the dependencies, Tailwind will be applied automatically to the project files matched by the `content` paths.
+Tailwind CSS will be automatically applied to your project.
 
 ## MUI (Material UI)
 
