@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 function NavBar(){
-    const Links: any[][] = [["/", "Home"],["/about", "Sobre nós"]]
+    const Links: any[][] = [["/", "Home"],["/about", "Sobre nós"], ["/game", "Game"]]
     return <>
         <div className="br-header" style={{ flexDirection: 'column', alignItems: 'center' }}>
             <div className="br-list" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', width: '20%' }}>
